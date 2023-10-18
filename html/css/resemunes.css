@@ -1,0 +1,19 @@
+    
+    
+    .fila{
+        display: flex;
+    }
+
+
+   .un_tercio {
+    width: calc((100% - 90px)/3);
+   }
+
+   .dos_tercios {
+    width: calc((100% - 90px)*2/3);
+   }
+   
+   .derecha{
+        width: 80%;
+   }
+   

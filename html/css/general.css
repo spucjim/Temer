@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Quicksand:wght@300&display=swap');
+
 .fondo_titulo{
     
     background-image: url(../img/logos/CPI.jpg);
@@ -7,10 +10,12 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    
  
 }
 
-body{margin: 0;}
+body{margin: 0;
+    min-width: 584px;}
 
 .logo_izquierda{
     
@@ -20,18 +25,18 @@ body{margin: 0;}
 }
 
 h1 {
-    margin-top: 0%;
+    
     line-height: 100px;
     text-align: center;
     height: 100px;
     width: 100%;    
     background-color: #e3e1ec;
-    margin: none;
+    margin: 0%;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    font-family: sans-serif;
-
+    font-family: 'Orbitron', sans-serif;
+   
 
 }
 
@@ -42,19 +47,70 @@ h1 {
     
 }
 
+.central {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
+
+    /* Ajusta otras propiedades según sea necesario */
+
+    /* Para crear el espacio necesario para el comportamiento sticky */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+.publicidad_izquierda, .publicidad_derecha{
+    width: 10%; /* Establece el ancho del 10% para los bloques de publicidad y el centro */
+    position: relative; /* Permite usar posición absoluta para el contenido interno */
+}
+
+.publicidad_izquierda img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del bloque de publicidad */
+}
+.publicidad_derecha img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del bloque de publicidad */
+}
+
+/* Aplicar efecto sticky */
+.publicidad_izquierda, .publicidad_derecha {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; /* Fija la publicidad en la parte superior de su contenedor */
+}
+
+
 
 nav{
-
-    
+ margin-top: 0%; 
+ 
+ border-bottom: 3px solid #aaaa;
+ border-top: 3px solid #aaaa;
+ background-color: #eee;
 }
+
+nav li{
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+}
+
+li a {
+    display: inline;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: black;
+    
+  }
+nav li a:hover{
+    background-color: #CCC;
+}
+nav ul{
+    text-align: center;
+}
+
 
 footer{
-    
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 2.5rem;            /* Footer height */
-      
+        margin-bottom: 20px;          /* Footer height */
 }
-
 
